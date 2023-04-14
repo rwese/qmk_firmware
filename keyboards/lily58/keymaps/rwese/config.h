@@ -27,8 +27,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_ALT_OVERRIDE
 #define GRAVE_ESC_CTRL_OVERRIDE
 
-#define TAPPING_TERM 250
+#undef TAPPING_TERM
+#define TAPPING_TERM 200
+#define COMBO_TERM 30
+#define COMBO_MUST_HOLD_MODS
 
+// CapsWord
+#define CAPS_WORD_IDLE_TIMEOUT 3000
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 // how long before a tap becomes a hold, if set above 500, a key tapped during the tapping term will turn it into a hold too
 
 // #define PERMISSIVE_HOLD
@@ -57,3 +63,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_BASE_MOVEMENTS 1
 #define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 8
 #define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 4
+
+#define COMBO_COUNT 4

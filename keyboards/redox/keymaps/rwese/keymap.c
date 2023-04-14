@@ -1,9 +1,11 @@
 #include QMK_KEYBOARD_H
+
 #include "keymap_french.h"
 #include "keymap_us_international.h"
 
 enum custom_keycodes {
     OPEN_CONSOLE = SAFE_RANGE,
+    ESCAPE_SPECIAL,
 };
 
 // Left-hand home row mods

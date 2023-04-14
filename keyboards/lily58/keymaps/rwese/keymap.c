@@ -33,20 +33,9 @@ enum custom_keycodes {
 #define KC_ADPU LT(_ADJUST, KC_PGUP)
 #define KC_RALT_QUOTE RALT(KC_QUOT)
 
-enum {
-    TD_PASTE,
-    TD_COPY,
-};
-
-qk_tap_dance_action_t tap_dance_actions[] = {
-    [TD_COPY]  = ACTION_TAP_DANCE_DOUBLE(KC_C, LCTL(KC_C)),
-    [TD_PASTE] = ACTION_TAP_DANCE_DOUBLE(KC_V, LCTL(KC_V)),
-};
-
-#define WIN_APP MT(MOD_LGUI, KC_APP)
-#define LCTL_CAPS MT(MOD_LCTL, KC_CAPS)
-
+#include "rwese_combos.c"
 #include "rwese.c"
+
 #ifdef OLED_ENABLE
 #    include "oled.c"
 #endif
@@ -59,10 +48,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
 
             return false;
-        case KC_ESC:
-            if (!record->event.pressed) {
-                clear_mods();
-            }
     }
 
     if (record->event.pressed) {
@@ -71,5 +56,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #endif
         // set_timelog();
     }
+
     return true;
 }
