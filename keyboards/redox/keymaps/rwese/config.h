@@ -35,7 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define SPLIT_LED_STATE_ENSABLE
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 350
+#define TAPPING_TERM 250
 #define COMBO_TERM 30
 #define COMBO_MUST_HOLD_MODS
 

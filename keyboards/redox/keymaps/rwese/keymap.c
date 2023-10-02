@@ -52,6 +52,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
+#ifdef RGBLIGHT_ENABLE
 bool led_update_user(led_t led_state) {
     if (led_state.caps_lock) {
         rgblight_enable_noeeprom();
@@ -62,12 +63,15 @@ bool led_update_user(led_t led_state) {
 
     return true;
 }
+#endif
 
 void caps_word_set_user(bool active) {
+#ifdef RGBLIGHT_ENABLE
     if (active) {
         rgblight_enable_noeeprom();
         rgblight_sethsv_noeeprom(HSV_GREEN);
     } else {
         rgblight_disable_noeeprom();
     }
+#endif
 }
