@@ -26,6 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_CTRL_OVERRIDE
 
 #undef RGBLED_NUM
+#undef RGBLIGHT_LIGHT_COUNT
+#undef RGBLIGHT_LED_COUNT
+#undef RGBLIGHT_ANIMATIONS
+#undef RGBLIGHT_HUE_STEP
+#undef RGBLIGHT_SAT_STEP
+#undef RGBLIGHT_VAL_STEP8
+#undef RGB_MATRIX_STARTUP_MODE
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 14
 #define RGBLIGHT_HUE_STEP 8
@@ -35,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define SPLIT_LED_STATE_ENSABLE
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 250
+#define TAPPING_TERM 200
 #define COMBO_TERM 30
 #define COMBO_MUST_HOLD_MODS
 
