@@ -116,3 +116,4 @@ compile_commands.json
 # VIA(L) files that don't belong in QMK repo
 via*.json
 /keyboards/**/keymaps/vial/*
+keyboards/redox/keymaps/rwese/logs/14c76549-0815-415c-9d44-bc814ec08666

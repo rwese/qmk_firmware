@@ -25,31 +25,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_ALT_OVERRIDE
 #define GRAVE_ESC_CTRL_OVERRIDE
 
-#undef RGBLED_NUM
-#undef RGBLIGHT_LIGHT_COUNT
-#undef RGBLIGHT_LED_COUNT
-#undef RGBLIGHT_ANIMATIONS
-#undef RGBLIGHT_HUE_STEP
-#undef RGBLIGHT_SAT_STEP
-#undef RGBLIGHT_VAL_STEP8
-#undef RGB_MATRIX_STARTUP_MODE
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 14
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_NONE
-// #define SPLIT_LED_STATE_ENSABLE
-
 #undef TAPPING_TERM
 #define TAPPING_TERM 200
 #define COMBO_TERM 30
 #define COMBO_MUST_HOLD_MODS
 
+#define TAP_CODE_DELAY 10
+
 /* key combination for command */
-#define IS_COMMAND() ( \
-    false \
-)
+#define IS_COMMAND() (false)
 
 // CapsWord
 #define CAPS_WORD_IDLE_TIMEOUT 3000
@@ -57,14 +41,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define PERMISSIVE_HOLD
 // makes tap and hold keys trigger the hold if another key is pressed before releasing, even if it hasn't hit the TAPPING_TERM
-//#define IGNORE_MOD_TAP_INTERRUPT
+// #define IGNORE_MOD_TAP_INTERRUPT
 // makes it possible to do rolling combos (zx) with keys that convert to other keys on hold, by enforcing the TAPPING_TERM for both keys.
 
 // #define TAPPING_FORCE_HOLD
 // makes it possible to use a dual roLCTL_T(KC_D)le key as modifier shortly after having been tapped (see Hold after tap)
 // Breaks any Tap Toggle functionality (TT or the One Shot Tap Toggle)
 
-#define USB_SUSPEND_WAKEUP_DELAY 100
+#define USB_SUSPEND_WAKEUP_DELAY 500
 
 #define MOUSEKEY_DELAY 0
 #define MOUSEKEY_INTERVAL 16
@@ -80,4 +64,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 8
 #define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 4
 
-#define COMBO_COUNT 4
+#define COMBO_COUNT 5
