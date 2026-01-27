@@ -63,5 +63,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_BASE_MOVEMENTS 1
 #define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 8
 #define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 4
-
-#define COMBO_COUNT 5
