@@ -26,18 +26,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_CTRL_OVERRIDE
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 200
+#define TAPPING_TERM 150
 #define COMBO_TERM 30
 #define COMBO_MUST_HOLD_MODS
 
 #define TAP_CODE_DELAY 10
 
 /* key combination for command */
-#define IS_COMMAND() (false)
+// #define IS_COMMAND() (false)
 
 // CapsWord
-#define CAPS_WORD_IDLE_TIMEOUT 3000
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+// #define CAPS_WORD_IDLE_TIMEOUT 3000
+// #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 // #define PERMISSIVE_HOLD
 // makes tap and hold keys trigger the hold if another key is pressed before releasing, even if it hasn't hit the TAPPING_TERM
