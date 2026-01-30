@@ -26,8 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_CTRL_OVERRIDE
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 150
-#define COMBO_TERM 30
+#define TAPPING_TERM 250
+#define COMBO_TERM 10
 #define COMBO_MUST_HOLD_MODS
 
 #define TAP_CODE_DELAY 10
