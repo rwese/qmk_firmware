@@ -25,12 +25,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GRAVE_ESC_ALT_OVERRIDE
 #define GRAVE_ESC_CTRL_OVERRIDE
 
-#undef TAPPING_TERM
-#define TAPPING_TERM 250
-#define COMBO_TERM 10
+
+#define COMBO_TERM 15
 #define COMBO_MUST_HOLD_MODS
 
 #define TAP_CODE_DELAY 10
+
+#define TAPPING_TERM 250
 
 /* key combination for command */
 // #define IS_COMMAND() (false)
